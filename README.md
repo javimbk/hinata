@@ -17,7 +17,7 @@ Also I'm trying to keep brushing up my Javascript skills, and this is a nice way
 ### How?
 
 Hinata will download the useful data, serialize it and store it.
-It will check the website once in a while to see if something has changed comparing against what it has stored.
+It will check the website once in a while (30 minutes now) to see if something has changed comparing against what it has stored.
 If something has changed, it will update the stored data and notify via Telegram to anyone subscribed to it.
 User will receive a nice formatted text, targetted for IM apps, that he/she can easily share with anyone, like the one below.
 
