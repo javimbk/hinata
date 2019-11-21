@@ -13,6 +13,7 @@
     "cron": "^1.7.2",
     "dotenv": "^8.2.0",
     "esm": "^3.2.25",
+    "mongodb": "^3.3.4",
     "node-fetch": "^2.6.0",
     "node-telegram-bot-api": "^0.40.0",
     "verror": "^1.10.0"
