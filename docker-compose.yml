@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  bot:
+    image: javimbk/hinata-telegram-bot:1.0
+    env_file:
+      - .env_docker
+    environment:
+      - MONGODB_URL=mongodb://db:27017
+      - MONGODB_DBNAME=hinata-prod
+    depends_on:
+      - db
+    networks:
+      - mongo
+  db:
+    image: mongo
+    volumes:
+      - mongodata:/data/db
+    networks:
+      - mongo
+
+volumes:
+  mongodata:
+
+networks:
+  mongo:
