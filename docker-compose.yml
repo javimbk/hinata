@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   bot:
-    image: javimbk/hinata-telegram-bot:1.0
+    image: javimbk/hinata-telegram-bot:latest
     env_file:
       - .env_docker
     environment:
